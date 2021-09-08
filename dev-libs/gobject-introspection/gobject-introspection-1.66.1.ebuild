@@ -26,7 +26,7 @@ RDEPEND="
 		$(python_gen_cond_dep '
 			dev-python/mako[${PYTHON_MULTI_USEDEP}]
 			dev-python/markdown[${PYTHON_MULTI_USEDEP}]
-		')
+		' python3_6)
 	)
 	virtual/pkgconfig
 	${PYTHON_DEPS}
