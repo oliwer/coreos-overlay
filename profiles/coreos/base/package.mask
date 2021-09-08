@@ -14,9 +14,3 @@
 # Since version 2, it tries to write liblto symlinks with absolute paths that
 # don't work when building for the board root directories.
 >=sys-devel/gcc-config-2
-
-# python3 transition
-#
-# This tries to pull too new python3, whereas the older versions
-# didn't do it.
->=dev-lang/python-exec-2.4.8
