@@ -24,8 +24,8 @@ RDEPEND="
 	dev-libs/libffi:=
 	doctool? (
 		$(python_gen_cond_dep '
-			dev-python/mako[${PYTHON_USEDEP}]
-			dev-python/markdown[${PYTHON_USEDEP}]
+			dev-python/mako[${PYTHON_MULTI_USEDEP}]
+			dev-python/markdown[${PYTHON_MULTI_USEDEP}]
 		' python3_6)
 	)
 	virtual/pkgconfig
@@ -44,7 +44,7 @@ DEPEND="${RDEPEND}
 		$(python_gen_cond_dep '
 			dev-python/mako[${PYTHON_MULTI_USEDEP}]
 			dev-python/markdown[${PYTHON_MULTI_USEDEP}]
-		')
+		' python3_6)
 	)
 "
 
