@@ -75,8 +75,8 @@ dev-libs/cyrus-sasl kerberos -berkdb -gdbm
 # don't build manpages for sssd
 sys-auth/sssd -python samba kerberos gssapi ssh sudo
 
-# needed for realmd build
-sys-auth/polkit introspection
+# not needed for anything really
+sys-auth/polkit -introspection
 
 # enable logging command-line options in update_engine
 dev-cpp/glog gflags
